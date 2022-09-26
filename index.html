@@ -7,6 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NX89Z22');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
 
     <!-- Title -->
     <title>Lukenya Getaway</title>
@@ -14,12 +28,28 @@
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
+    <!-- Reserveport Styles -->
+    <link href="https://reservations.reserveport.com/checkavailability/static/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.reserveport.com/media/api5/bootstrap.min.css">
+
+
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX89Z22" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="cssload-container">
@@ -197,65 +227,39 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
-                    <div class="book-now-form">
-                        <form action="#">
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select1">Check In</label>
-                                <select class="form-control" id="select1">
-                                  <option>19 June</option>
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                </select>
-                            </div>
+                    <!-- <booking-widget id="1335"></booking-widget> -->
+                    <search-availability id="1335" clientemail="true" layout="1"></search-availability>
 
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select2">Check Out</label>
-                                <select class="form-control" id="select2">
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                  <option>26 June</option>
-                                  <option>27 June</option>
-                                </select>
-                            </div>
 
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select3">Adults</label>
-                                <select class="form-control" id="select3">
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select4">Childrens</label>
-                                <select class="form-control" id="select4">
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                </select>
-                            </div>
-
-                            <!-- Button -->
-                            <button type="submit">Book Now</button>
-                        </form>
-                    </div>
+<style>
+button#vue-btn-search {
+    fill: #FFFFFF !important;
+    color: #FFFFFF !important;
+    background-color: #7F0407 !important;
+    border-color: #7F0407 !important;
+    border-radius: 4px 4px 4px 4px !important;
+}
+input#checkin, input#checkout  {
+    display: inline-block !important;
+}
+#booking-widget .reserveport-form-wrap {
+    background: #ffffff !Important;
+}
+.inner {
+box-shadow: 0px 2px 7px 0px #9d9292 !important;
+}
+#booking-widget .btn-orange-solid {
+    background: #7f0407 !important;
+    border-radius: 4px 4px 4px 4px !important;
+}
+button.btn.btn-solid {
+    width: auto !important;
+    background: #7f0407 !important;
+}
+a.btn.btn-solid {
+    background: #7f0407 !important;
+}
+</style>
                 </div>
             </div>
         </div>
@@ -501,6 +505,30 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script async src='js/plugins/embed.min.js'></script>
+        <script>
+          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":0,"marginBottom":20,"marginLeft":10,"marginRight":10,"btnPosition":"left","whatsAppNumber":"254734880488","welcomeMessage":"Hello,\nHow may I help you?","zIndex":999999,"btnColorScheme":"light"};
+          window.onload = () => {
+            _waEmbed(wa_btnSetting);
+          };
+        </script>
+       <!-- src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js' -->
+      
+        
+      
+      
+      
+
+    <!--Reserveport Indexpage Scripts-->
+    <script type="text/javascript" src="https://reservations.reserveport.com/checkavailability/static/js/manifest.js"></script>
+    <script type="text/javascript" src="https://reservations.reserveport.com/checkavailability/static/js/vendor.js"></script>
+    <script type="text/javascript" src="https://reservations.reserveport.com/checkavailability/static/js/app.js"></script>
+    <script type="text/javascript" src="https://www.reserveport.com/media/api5/popper.min.js"></script>
+    <script type="text/javascript" src="https://www.reserveport.com/media/api5/bootstrap.min.js"></script>
+
+
+<!-- End of Optional -->
+
 </body>
 
 </html>
