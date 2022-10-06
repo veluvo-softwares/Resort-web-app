@@ -1766,17 +1766,20 @@ img {
 .contact-form-area {
   position: relative;
   z-index: 1;
+  border-bottom: 1px solid #ad1919;
+  padding: 50px
 }
 .contact-form-area form {
   position: relative;
   z-index: 1;
+  
 }
 .contact-form-area form input,
 .contact-form-area form textarea {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   border: none;
-  border-bottom: 2px solid #c9c9c9;
+  border: 2px solid #ad1919;
   margin-bottom: 30px;
   font-size: 12px;
   font-style: italic;
