@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Amenities {% endblock title %}
+
+
+{% block body %}
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center"
+        style="background-image: url(../../static/img/bg-img/slide_3.jpg);">
+        <div class="bradcumbContent">
+            <h2>Amenities @ Lukenya</h2>
+        </div>
+    </section>
+
+    <!-- ##### Service Intro Area Start ##### -->
+    <section class="services-intro">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Service Intro Text -->
+                <div class="col-12 col-lg-6">
+                    <div class="service-intro-text mb-100">
+                        <div class="section-heading">
+                            <div class="line-"></div>
+                            <h2>Amazing Amenities</h2>
+                        </div>
+                        <p>A visit to Lukenya Getaway will give you the chance to have a taste of paradise regardless of
+                            your reason for visiting. Our serene environment provides you with the perfect location to
+                            escape
+                            the hustle and bustle of city life.</p>
+                        <!-- <a href="#" class="btn lukenyaGetaway-btn mt-50">Read More</a> -->
+                    </div>
+                </div>
+                
+                <!-- Amenities Features -->
+                <div class="col-12 col-lg-6">
+                    <div class="row mb-100">
+
+                        <!-- Single Cool Facts -->
+                        <div class="col-12 col-sm-4">
+                            <div class="single-cool-fact">
+                                <div class="scf-text">
+                                    <i class="icon-cocktail-1"></i>
+                                    <p>Dining</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Cool Facts -->
+                        <div class="col-12 col-sm-4">
+                            <div class="single-cool-fact">
+                                <div class="scf-text">
+                                    <i class="icon-swimming-pool"></i>
+                                    <p>Swimming Pool</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Cool Facts -->
+                        <div class="col-12 col-sm-4">
+                            <div class="single-cool-fact">
+                                <div class="scf-text">
+                                    <i class="icon-beach"></i>
+                                    <p>Conferencing</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 2px solid; background-color: #ad1919">
+        </div>
+    </section>
+    <section class="about-us-area" id="dining">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Dining_3.jpeg'%}" alt="">
+                     
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-text mb-100">
+                        <!-- <div class="section-heading">
+                            <div class="line-"></div>
+                            
+                        </div> -->
+                        <h3>Restaurants (Dining)</h3><br>
+                        <p>The Lukenya Getaway Limited began in 2001 as a countryside home. Our serene environment and perfect location resulted in past returning here seeking a home away from home experience. As demand increased, we set up our Cottages to accommodate our former and new guests.
+                            From a humble beginning as a countryside home, we have grown over the years to offer a wide range of services and facilities such as a pool, a spacious dining area, and a volleyball pitch</p>
+                        <a href="/contact-us" class="btn lukenyaGetaway-btn mt-50">Make Inquiry</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Dining_2.jpeg'%}" alt="">
+                     
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Dining_1.jpeg'%}" alt="">
+                     
+                    </div>
+                </div>
+            </div>
+            <hr style="width: solid 2px; background-color: #ad1919">
+        </div>
+    </section>
+    <section class="about-us-area" id="swimming">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="about-text mb-100">
+                        <h3>Swimming Pools</h3><br>
+                        <p>The Lukenya Getaway Limited began in 2001 as a countryside home. Our serene environment and perfect location resulted in past returning here seeking a home away from home experience. As demand increased, we set up our Cottages to accommodate our former and new guests.
+                            From a humble beginning as a countryside home, we have grown over the years to offer a wide range of services and facilities such as a pool, a spacious dining area, and a volleyball pitch</p>
+                            <a href="/contact-us" class="btn lukenyaGetaway-btn mt-50">Make Inquiry</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/slide_2.jpg'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Pool View Pic 4.jpg'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Pool View Pic 3.jpg'%}" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 2px solid; background-color: #ad1919">
+        </div>
+    </section>
+    <!-- Conferencing -->
+    <section class="about-us-area" id="conferencing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Conference Pic 1.jpg'%}" alt="">
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/blyScQiKWIA"
+                            title="The Lukenya Getaway" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+
+                        </iframe> -->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-text mb-100">
+                        <h3>Conferencing</h3><br>
+                        <p>The Lukenya Getaway Limited began in 2001 as a countryside home. Our serene environment and perfect location resulted in past returning here seeking a home away from home experience. As demand increased, we set up our Cottages to accommodate our former and new guests.
+                            From a humble beginning as a countryside home, we have grown over the years to offer a wide range of services and facilities such as a pool, a spacious dining area, and a volleyball pitch</p>
+                            <a href="/contact-us" class="btn lukenyaGetaway-btn mt-50">Make Inquiry</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Conference Pic 2.jpg'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail mb-100">
+                        <img src="{% static 'img/bg-img/Conference Pic 5.jpg'%}" alt="">
+                    </div>
+                </div>
+               
+            </div>
+            
+        </div>
+    </section>
+    <!-- ##### Service Intro Area End ##### -->
+{% endblock %}

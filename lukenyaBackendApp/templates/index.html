@@ -1,0 +1,666 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+
+{% block body %}
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX89Z22" height="0" width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<!-- Preloader -->
+<div class="preloader d-flex align-items-center justify-content-center">
+    <div class="cssload-container">
+        <img src="{% static 'img/core-img/logo.png' %}" alt="logo">
+        <div class="cssload-loading" style="text-align: center">
+            <hr style="width: solid 2px; background-color: #ad1919">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+</div>
+
+<!-- ##### Hero Area Start ##### -->
+<section class="hero-area">
+    <div class="hero-slides owl-carousel">
+
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide d-flex align-items-center justify-content-center">
+            <!-- Slide Img -->
+            <div class="slide-img bg-img" style="background-image: url(../../static/img/bg-img/slide_1.jpg);"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <!-- Slide Content -->
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <div class="line" data-animation="fadeInUp" data-delay="300ms"></div>
+                            <h2 data-animation="fadeInUp" data-delay="500ms">The Luxury Getaway</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">A visit to Lukenya Getaway will give you
+                                the chance to have a taste of paradise regardless of
+                                your reason for visiting. Our serene environment provides you with the perfect
+                                location to escape
+                                the hustle and bustle of city life.</p>
+                            <a href="/activities" class="btn lukenyaGetaway-btn mt-50" data-animation="fadeInUp"
+                                data-delay="900ms">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide d-flex align-items-center justify-content-center">
+            <!-- Slide Img -->
+            <div class="slide-img bg-img" style="background-image: url(../../static/img/bg-img/slide_2.jpg);"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <!-- Slide Content -->
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <div class="line" data-animation="fadeInUp" data-delay="300ms"></div>
+                            <h2 data-animation="fadeInUp" data-delay="500ms">A Taste of Nature</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">A visit to Lukenya Getaway will give you
+                                the chance to have a taste of paradise regardless of
+                                your reason for visiting. Our serene environment provides you with the perfect
+                                location to escape
+                                the hustle and bustle of city life.</p>
+                            <a href="/about-us" class="btn lukenyaGetaway-btn mt-50" data-animation="fadeInUp"
+                                data-delay="900ms">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide d-flex align-items-center justify-content-center">
+            <!-- Slide Img -->
+            <div class="slide-img bg-img" style="background-image: url(../../static/img/bg-img/slide_3.jpg);"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <!-- Slide Content -->
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <div class="line" data-animation="fadeInUp" data-delay="300ms"></div>
+                            <h2 data-animation="fadeInUp" data-delay="500ms">Enjoy your life</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">A visit to Lukenya Getaway will give you
+                                the chance to have a taste of paradise regardless of
+                                your reason for visiting. Our serene environment provides you with the perfect
+                                location to escape
+                                the hustle and bustle of city life.</p>
+                            <a href="/amenities" class="btn lukenyaGetaway-btn mt-50" data-animation="fadeInUp"
+                                data-delay="900ms">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### Book Now Area Start ##### -->
+<div class="book-now-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <!-- Booking Widget - Reserveport -->
+                <!-- <booking-widget id="1335"></booking-widget> -->
+                <search-availability data-v-6471f287="" id="1335" clientemail="true" layout="1" vce-ready="">
+                    <div id="app">
+                        <div data-v-6471f287="" id="booking-widget">
+                            <!---->
+                            <div data-v-6471f287="" class="reserveport-form-wrap">
+                                <div data-v-6471f287="" class="container vue-content-body">
+                                    <div data-v-6471f287="" class="vue-search-box">
+                                        <form data-v-6471f287="" method="get"
+                                            action="/reservations">
+                                            <div data-v-6471f287="" class="row vue-date-box">
+                                                <div data-v-6471f287="" class="col-md-3"><label data-v-6471f287=""
+                                                        class="guest-link">Check In</label>
+                                                    <div data-v-6471f287="" class="form-group vue-sd-container"><input
+                                                            data-v-6471f287="" id="checkin" name="checkin_date"
+                                                            placeholder="yyyy-mm-dd" type="date" min="2022-10-13"
+                                                            required="required" class="vue-email_screen"
+                                                            style="display: table-cell; width: 100%;"></div>
+                                                </div>
+                                                <div data-v-6471f287="" class="col-md-3 vue-md_p5 "><label
+                                                        data-v-6471f287="" class="guest-link">Check Out</label>
+                                                    <div data-v-6471f287="" class="form-group vue-sd-container"><input
+                                                            data-v-6471f287="" placeholder="yyyy-mm-dd"
+                                                            name="checkout_date" id="checkout" type="date"
+                                                            min="2022-10-14" required="required"
+                                                            class="vue-email_screen"
+                                                            style="display: table-cell; width: 100%;"></div>
+                                                </div>
+                                                <div data-v-6471f287="" class="col-md-3 vue-md_p5"><label
+                                                        data-v-6471f287="" class="guest-link">Occupancy</label>
+                                                    <div data-v-6471f287="" class="form-group ">
+                                                        <div data-v-6471f287="" id="vue-guests-groups"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false" class="vue-small_large_select"
+                                                            style="width: 100%;">
+                                                            <div data-v-6471f287="" id="occupancy-control"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="true"><input data-v-6471f287=""
+                                                                    type="hidden" name="pid" value="1335"> <input
+                                                                    data-v-6471f287="" type="hidden" name="no_rooms"
+                                                                    value="1"> <input data-v-6471f287="" type="hidden"
+                                                                    name="adults" value="1"> <input data-v-6471f287=""
+                                                                    type="hidden" name="children" value="0"> <input
+                                                                    data-v-6471f287="" type="hidden" name="babies"
+                                                                    value="0">
+                                                                <div data-v-6471f287="" id="occupancy-text-2"
+                                                                    class="pull-left">
+                                                                    <div data-v-6471f287="">1 Room | 1 Guest</div>
+                                                                </div>
+                                                                <div data-v-6471f287="" class="pull-right"><img
+                                                                        data-v-6471f287=""
+                                                                        src="https://reservations.reserveport.com/static/img/icon.png"
+                                                                        alt="" width="15px"></div>
+                                                            </div>
+                                                            <div data-v-6471f287="" id="vue-dropdown-home"
+                                                                class="dropdown-menu hdropdown vue-paddt15">
+                                                                <div data-v-6471f287="" class="vue-mobile pull-left ">
+                                                                    <div data-v-6471f287="" class="row">
+                                                                        <div data-v-6471f287=""
+                                                                            class="col-md-6  col-xs-6"><label
+                                                                                data-v-6471f287="">Rooms</label></div>
+                                                                        <div data-v-6471f287=""
+                                                                            class="col-md-6 col-xs-6">
+                                                                            <div data-v-6471f287=""
+                                                                                class="paddb10 booking-btngrp block">
+                                                                                <button data-v-6471f287="" type="button"
+                                                                                    id="minus-vue-btn-roomsfx"
+                                                                                    class="vue-btnb  "><i
+                                                                                        data-v-6471f287=""
+                                                                                        class="fa fa-minus"></i></button>
+                                                                                <input data-v-6471f287=""
+                                                                                    disabled="disabled" id="roomsfx"
+                                                                                    name="roomsfx" type="text"
+                                                                                    class="vue-fxcount"> <button
+                                                                                    data-v-6471f287="" type="button"
+                                                                                    id="plus-vue-btn-roomsfx"
+                                                                                    class="vue-btnb  "><i
+                                                                                        data-v-6471f287=""
+                                                                                        class="fa fa-plus"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div data-v-6471f287="" id="vue-occupancy-details">
+                                                                        <div data-v-6471f287="" class="row">
+                                                                            <div data-v-6471f287=""
+                                                                                class="col-md-6 col-sm-7 col-xs-6">
+                                                                                <label
+                                                                                    data-v-6471f287="">Adults</label><small
+                                                                                    data-v-6471f287=""
+                                                                                    class="vue-ageDiv">(13yr+)</small>
+                                                                            </div>
+                                                                            <div data-v-6471f287=""
+                                                                                class="col-md-6 col-sm-5 col-xs-6">
+                                                                                <div data-v-6471f287=""
+                                                                                    class="paddb10 booking-btngrp block">
+                                                                                    <button data-v-6471f287=""
+                                                                                        type="button"
+                                                                                        id="minus-vue-btn-adultsfx"
+                                                                                        class="vue-btnb  "><i
+                                                                                            data-v-6471f287=""
+                                                                                            class="fa fa-minus"></i></button>
+                                                                                    <input data-v-6471f287=""
+                                                                                        disabled="disabled"
+                                                                                        id="adultsfx" name="adultsfx"
+                                                                                        type="text" class="vue-fxcount">
+                                                                                    <button data-v-6471f287=""
+                                                                                        type="button"
+                                                                                        id="plus-vue-btn-adultsfx"
+                                                                                        class="vue-btnb  "><i
+                                                                                            data-v-6471f287=""
+                                                                                            class="fa fa-plus"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div data-v-6471f287="" class="clearfix clear">
+                                                                        </div>
+                                                                        <div data-v-6471f287="" class="row"
+                                                                            style="padding-top: 10px; padding-bottom: 10px;">
+                                                                            <div data-v-6471f287=""
+                                                                                class="col-md-6 col-sm-6 col-xs-6">
+                                                                                <label
+                                                                                    data-v-6471f287="">Children</label><small
+                                                                                    data-v-6471f287=""
+                                                                                    class="vue-ageDiv">(4 -
+                                                                                    12yr)</small></div>
+                                                                            <div data-v-6471f287=""
+                                                                                class="col-md-6 col-sm-6 col-xs-6">
+                                                                                <div data-v-6471f287=""
+                                                                                    class="paddb10 booking-btngrp block">
+                                                                                    <button data-v-6471f287=""
+                                                                                        type="button"
+                                                                                        id="minus-vue-btn-childrenfx"
+                                                                                        class="vue-btnb  "><i
+                                                                                            data-v-6471f287=""
+                                                                                            class="fa fa-minus"></i></button>
+                                                                                    <input data-v-6471f287=""
+                                                                                        disabled="disabled"
+                                                                                        id="childrenfx"
+                                                                                        name="childrenfx" type="text"
+                                                                                        class="vue-fxcount"> <button
+                                                                                        data-v-6471f287="" type="button"
+                                                                                        id="plus-vue-btn-childrenfx"
+                                                                                        class="vue-btnb  "><i
+                                                                                            data-v-6471f287=""
+                                                                                            class="fa fa-plus"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div data-v-6471f287="" class="clearfix clear">
+                                                                        </div>
+                                                                        <div data-v-6471f287="" class="row">
+                                                                            <div data-v-6471f287=""
+                                                                                class="col-md-6 col-sm-6 col-xs-6">
+                                                                                <label
+                                                                                    data-v-6471f287="">Infants</label><small
+                                                                                    data-v-6471f287=""
+                                                                                    class="vue-ageDiv">(0-3yr)</small>
+                                                                            </div>
+                                                                            <div data-v-6471f287=""
+                                                                                class="col-md-6 col-sm-6 col-xs-6">
+                                                                                <div data-v-6471f287=""
+                                                                                    class="paddb10 booking-btngrp block">
+                                                                                    <button data-v-6471f287=""
+                                                                                        type="button"
+                                                                                        id="minus-vue-btn-babiesfx"
+                                                                                        class="vue-btnb  "><i
+                                                                                            data-v-6471f287=""
+                                                                                            class="fa fa-minus"></i></button>
+                                                                                    <input data-v-6471f287=""
+                                                                                        disabled="disabled"
+                                                                                        id="babiesfx" name="babiesfx"
+                                                                                        type="text" class="vue-fxcount">
+                                                                                    <button data-v-6471f287=""
+                                                                                        type="button"
+                                                                                        id="plus-vue-btn-babiesfx"
+                                                                                        class="vue-btnb  "><i
+                                                                                            data-v-6471f287=""
+                                                                                            class="fa fa-plus"></i></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div data-v-6471f287="" class="clearfix clear"></div>
+                                                                <div data-v-6471f287="" class="col-md-12"><a
+                                                                        data-v-6471f287="" href="javascript:void(0);"
+                                                                        class="pull-right"><i data-v-6471f287=""
+                                                                            class="fa fa-close"></i> Close</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-6471f287=""
+                                                    class="col-md-3 col-sm-4 vue-btn-wrap avail-wrap vue-md_p5 "><a
+                                                        data-v-6471f287="" id="havepromo" data-toggle="collapse"
+                                                        href="#actPromoCodeact" role="button" aria-expanded="false"
+                                                        aria-controls="actPromoCodeact" class="vue-horizontal"><span
+                                                            data-v-6471f287="">Promotion code?</span></a>
+                                                    <div data-v-6471f287="" id="actPromoCodeact" class="collapse"><input
+                                                            data-v-6471f287="" type="text" id="coupon_code_largeScreen"
+                                                            name="coupon_code" placeholder="Promo Code"
+                                                            class="vue-coupon_code_screen vue-horizontal"></div> <br
+                                                        data-v-6471f287=""> <button data-v-6471f287="" type="submit"
+                                                        id="vue-btn-search" class="btn btn-md btn-orange-solid">
+                                                        <div data-v-6471f287=""> Check Availabilty</div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </search-availability>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Book Now Area End ##### -->
+
+<!-- ##### About Us Area Start ##### -->
+<section class="about-us-area">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-12 col-lg-6">
+                <div class="about-text text-center mb-100">
+                    <div class="section-heading text-center">
+                        <div class="line-"></div>
+                        <h2>A place to remember</h2>
+                    </div>
+                    <p>Lukenya Getaway is rightly named as it is the perfect Getaway away from the busy city life.
+                        We ride on our promise to offer a serene, quiet, peaceful and personal environment.
+                        Within our surroundings.
+                        This makes Lukenya Getaway the ideal venue for strategic thinking, rejuvenation, recreation
+                        and relaxation.
+                        Located just 40km from the city Center and just 25 mins from JKIA, the resort lies on 16
+                        acres of ever green plush gardens making
+                        it convenient and enjoyable for corporate groups, tourists,
+                        church groups, families, and individuals seeking relaxation & rejuvenation</p>
+                    <div class="about-key-text">
+                        <h6><span class="fa fa-check"></span> Relaxation</h6>
+                        <h6><span class="fa fa-check"></span> Rejuvenation</h6>
+                    </div>
+                    <a href="/about-us" class="btn lukenyaGetaway-btn mt-50">Read More</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="about-thumbnail homepage mb-100">
+                   
+                    <div class="first-img wow fadeInUp" data-wow-delay="100ms">
+                        <img src="{% static 'img/bg-img/DCN03976.jpg' %}" alt="">
+                    </div>
+               
+                    <div class="second-img wow fadeInUp" data-wow-delay="300ms">
+                        <img src="{% static 'img/bg-img/slide_2.jpg' %}" alt="">
+                    </div>
+             
+                    <div class="third-img wow fadeInUp" data-wow-delay="500ms">
+                        <img src="{% static 'img/bg-img/room-4.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### About Us Area End ##### -->
+
+<!-- ##### Pool Area Start ##### -->
+<section class="pool-area section-padding-100 bg-img bg-fixed"
+    style="background-image: url(../../static/img/bg-img/image-4.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <div class="pool-content text-center wow fadeInUp" data-wow-delay="300ms">
+                    <div class="section-heading text-center white">
+                        <div class="line-"></div>
+                        <h2>Lukenya Getaway</h2>
+                       
+                        <p>A taste of paradise</p>
+                        <hr>
+                        <h6 style="color: white">At Lukenya Getaway, the excellent service and superior facilities make
+                            for an unforgettable stay.
+                            Free internet access provided within the hotel keeps you connected throughout your stay.
+                            Airport transfer services can be booked before your check-in date, to ensure a smooth and
+                            convenient arrival or departure.
+                            Car hire and shuttle services provided by the hotel make exploring Athi River even more
+                            convenient.</h6>
+                    </div>
+
+
+                    <!-- Button -->
+                    <a href="#" class="btn lukenyaGetaway-btn mt-50">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- ##### Pool Area End ##### -->
+<!-- ##### Rooms Area Start ##### -->
+<section class="rooms-area section-padding-100-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <div class="section-heading text-center">
+                    <div class="line-"></div>
+                    <h2>Choose a room</h2>
+                    <p>Lukenya Getaway Resort - Click on room card for more details</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            {% for rooms in room %}
+            <!-- Single Rooms Area -->
+            <div class="col-12 col-md-6 col-lg-6">
+                
+                <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+                    
+                    <!-- Thumbnail -->
+                    <div class="bg-thumbnail bg-img" style="background-image: url({{rooms.img.url}});">
+                    </div>
+
+                    <!-- Price -->
+                    <p class="price-from">From KES {{rooms.kes_price}}/${{rooms.usd_price}} night</p>
+                    <!-- <p class="price-from"></p> -->
+                    <!-- Rooms Text -->
+                    <div class="rooms-text">
+                        <div class="line"></div>
+                        <h4>{{rooms.name}}</h4>
+                        <p>{{rooms.desc}}</p>
+                    </div>
+                    <!-- Book Room -->
+                    <a href="/rooms" class="book-room-btn btn lukenyaGetaway-btn">Book Room</a>
+                    
+                </div>
+                
+            </div>
+            
+            <!-- Single Rooms Area -->
+
+            {% endfor %}
+        </div>
+        
+    </div>
+   
+</section>
+
+<!-- ##### Rooms Area End ##### -->
+
+<!-- #### Youtube Video Start ####-->
+<section class="contact-area d-flex flex-wrap align-items-center">
+    <hr style="background-color: #ad1919; width: 2"> 
+    <div class="contact-info">
+        <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
+            <div class="line-"></div>
+            <h2>More About Us</h2>
+            <p>Lukenya Getaway is rightly named as it is the perfect Getaway away from the busy city life.
+                We ride on our promise to offer a serene, quiet, peaceful and personal environment.
+                Within our surroundings.
+                This makes Lukenya Getaway the ideal venue for strategic thinking, rejuvenation, recreation and
+                relaxation.
+                Located just 40km from the city Center and just 25 mins from JKIA, the resort lies on 16 acres of
+                ever green plush gardens making
+                it convenient and enjoyable for corporate groups, tourists,
+                church groups, families, and individuals seeking relaxation & rejuvenation</p>
+        </div>
+    </div>
+
+    <div class="home-map-area">
+        <iframe width='50%' height="315" src="https://www.youtube.com/embed/NzKwsUMvWbs"
+            title="LUKENYA GETAWAY- AN OASIS"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+  
+    <!-- Contact Info -->
+</section>
+<!-- #### Youtube Video End ####-->
+
+<section class="testimonial-area section-padding-100 bg-img" style="background-color: wheat;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="testimonial-content">
+                    <div class="section-heading text-center">
+                        <div class="line-"></div>
+                        <h2>What Clients Say</h2>
+                    </div>
+
+                    <!-- Testimonial Slides -->
+                    <div class="testimonial-slides owl-carousel">
+                        {% for testimonials in test %}
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial">
+                            <p>{{testimonials.customer_testimonial}}</p>
+                            <h6>{{testimonials.customer_name}} <span>{{testimonials.customer_designation}}</span></h6>
+                            <img src="img/core-img/trip.png" alt="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #### Testimonials End -->
+<section class="contact-area d-flex flex-wrap align-items-center">
+    <div class="container">
+    <div class="col-12 col-lg-12">
+        <div class="section-heading text-center">
+            <div class="line-"></div>
+            <h2>FAQs</h2>
+        </div>
+        <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
+            <!-- single accordian area -->
+            <div class="panel single-accordion">
+                <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse"
+                        data-parent="#accordion" href="#collapseOne">What services do you offer?
+                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                    </a></h6>
+                <div id="collapseOne" class="accordion-content collapse show">
+                    <p>At Lukenya Getaway Limited, we offer you a home away from home in a serene environment.
+                        Our services include hotel, accommodation, conferencing, camping, team building activities, and
+                        other fun activities.</p>
+                </div>
+            </div>
+            <!-- single accordian area -->
+            <div class="panel single-accordion">
+                <h6>
+                    <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo"
+                        data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">What are your rates?
+                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                    </a>
+                </h6>
+                <div id="collapseTwo" class="accordion-content collapse">
+                    <p>Our rates differ depending on the services that you choose. For more information or to enquire
+                        about a customized package, kindly reach out to us either by email or by phone call.</p>
+                </div>
+            </div>
+            <!-- single accordian area -->
+            <div class="panel single-accordion">
+                <h6>
+                    <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed"
+                        data-parent="#accordion" data-toggle="collapse" href="#collapseThree">What is your accommodation availability?
+                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                    </a>
+                </h6>
+                <div id="collapseThree" class="accordion-content collapse">
+                    <p>Our accommodation is open all year round. Availability depends on the season of the year. To
+                        find out about availability and to make a booking, kindly contact us on our email or via phone
+                        call.</p>
+                </div>
+            </div>
+            <div class="panel single-accordion">
+                <h6>
+                    <a role="button" aria-expanded="true" aria-controls="collapseFour" class="collapsed"
+                        data-parent="#accordion" data-toggle="collapse" href="#collapseFour">Do you have a cancellation policy?
+                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                    </a>
+                </h6>
+                <div id="collapseFour" class="accordion-content collapse">
+                    <p>Yes. We do understand that things can change and offer flexibility to all our current and future
+                        customers. Our cancellation policy is as follows: <br>
+                        ● 35 to 20 days- 10%<br>
+                        ● 19 to 10 days – 25%<br>
+                        ● 9 to 2 days – 35%<br>
+                        ● 2 to 0 days – 100%.<br>
+                    
+                    
+                    </p>
+                </div>
+
+            </div>
+            <div class="panel single-accordion">
+                <h6>
+                    <a role="button" aria-expanded="true" aria-controls="collapseFive" class="collapsed"
+                        data-parent="#accordion" data-toggle="collapse" href="#collapseFive">What Payment methods do you accept?
+                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                    </a>
+                </h6>
+                <div id="collapseFive" class="accordion-content collapse">
+                    <p>At Lukenya Getaway, we accept all major credit cards as well as MPesa as a form of payment.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- ##### Contact Area Start ##### -->
+
+<section class="contact-area d-flex flex-wrap align-items-center" style="border-top-width: solid 2px; border-top-color: #ad1919">
+    <hr style="width: solid 2px; background-color: #ad1919">
+    <div class="home-map-area">
+        
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.545317835074!2d37.041820815509084!3d-1.447395598944418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f77f6f439424d%3A0xb57ab6d0f4d66b2a!2sLukenya%20getaway%20resort!5e0!3m2!1sen!2ske!4v1664868007987!5m2!1sen!2ske"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
+            <div class="line-"></div>
+            <h2>Contact Info</h2>
+            <p>Lukenya Getaway is rightly named as it is the perfect Getaway away from the busy city life. We ride
+                on our promise to offer a serene, quiet, peaceful and personal environment. Within our surroundings.
+                This makes Lukenya Getaway the ideal venue for strategic thinking, rejuvenation, recreation and
+                relaxation. Located just 40km from the city Center and just 25 mins from JKIA, the resort lies on 16
+                acres of ever green plush gardens making it convenient and enjoyable for corporate groups, tourists,
+
+                church groups, families, and individuals seeking relaxation & rejuvenation</p>
+        </div>
+        <h4 class="wow fadeInUp" data-wow-delay="300ms">Athi River</h4>
+        <h5 class="wow fadeInUp" data-wow-delay="400ms">+254 734 880 488</h5>
+        <h5 class="wow fadeInUp" data-wow-delay="500ms">info@lukenyagetaway.com</h5>
+        <!-- Social Info -->
+        <div class="social-info mt-50 wow fadeInUp" data-wow-delay="600ms">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <!-- <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a> -->
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ##### Contact Area End ##### -->
+
+{% endblock body %}

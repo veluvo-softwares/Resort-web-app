@@ -1,1 +1,6 @@
 mainauthor.txt
+virtual/
+vscode/
+.vscode
+.sass-cache/
+/.sass-cache/

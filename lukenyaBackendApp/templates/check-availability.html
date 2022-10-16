@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+
+{% block body %}
+    <!-- ##### Header Area End ##### -->
+    <!-- ##### Book Now Area Start ##### -->
+    <hr style="margin-top: 150px; color: transparent;">
+    <div class="book-now-area">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <!-- Booking Widget - Reserveport -->
+                <booking-widget id="1335" vce-ready=""></booking-widget>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript"
+src="https://reservations.reserveport.com/checkavailability/static/js/manifest.js"></script>
+<script type="text/javascript"
+src="https://reservations.reserveport.com/checkavailability/static/js/vendor.js"></script>
+<script type="text/javascript" src="{% static 'js/bookingWidget/app.js' %}"></script>
+<script type="text/javascript" src="https://www.reserveport.com/media/api5/popper.min.js"></script>
+<script type="text/javascript" src="https://www.reserveport.com/media/api5/bootstrap.min.js"></script>
+
+<script src="https://reservations.reserveport.com/static/js/manifest.js"></script>
+<script src="https://reservations.reserveport.com/static/js/vendor.js"></script>
+<script src="https://reservations.reserveport.com/static/js/app.js"></script>
+<!-- Optional -->
+<script src="https://www.reserveport.com/media/api5/popper.min.js"></script>
+<script src="https://www.reserveport.com/media/api5/bootstrap.min.js"></script>
+<!-- End of Optional -->
+{% endblock %}

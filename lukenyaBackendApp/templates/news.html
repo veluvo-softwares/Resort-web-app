@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} News {% endblock title %}
+
+
+{% block body %}
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="cssload-container">
+            <div class="cssload-loading" style="text-align: center">
+                <img src="{% static 'img/core-img/logo.png' %}" alt="logo">
+                <hr>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <!-- ##### Header Area End ##### -->
+    <!-- style="background-image: url(../../static/img/bg-img/bg-7.jpg) -->
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center"
+        ">
+        <div class="bradcumbContent">
+            <h2>News / Announcements</h2>
+        </div>
+    </section>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Book Now Area Start ##### -->
+    <div class="blog-area section-padding-0-100">
+        <div class="container">
+        </div>
+    </div>
+    <!-- ##### Book Now Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <div class="blog-area section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="lukenyaGetaway-blog-posts">
+                        {% for newz in nws %}
+                        <!-- ##### Single Blog Post ##### -->
+                        <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
+                            <!-- Post Thumb -->
+                             <div class="blog-post-thumb">
+                                <img src="{{newz.news_img.url}}" alt="">
+                            </div>
+                            <!-- Post Content -->
+                            <div class="post-content">
+                                <!-- Post Date-->
+                                <a href="#" class="post-date btn lukenyaGetaway-btn">{{newz.news_date}}</a>
+                                <!-- Post Title -->
+                                <a href="#" class="post-title">{{newz.news_date|date:"F"}}</a>
+                                <!-- Post Meta -->
+                                <div class="post-meta d-flex justify-content-center">
+                                    <!-- Catagory -->
+                                    <a href="#" class="post-catagory">{{newz.news_header}}</a>
+                                    <!-- Comments -->
+                                    <a href="#" class="post-comments">0 comments</a>
+                                </div>
+                                <!-- Post Excerpt -->
+                                <p>{{newz.news_description}}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- <div class="col-12">
+                    <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="700ms">
+                        <a href="#" class="btn lukenyaGetaway-btn">Load More</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- ##### Blog Area End ##### -->
+{% endblock body %}
