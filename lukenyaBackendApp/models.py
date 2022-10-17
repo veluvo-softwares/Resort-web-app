@@ -58,12 +58,6 @@ class image_category(models.Model):
 
 
 
-# class about(models.Model):
-#     abt_name = models.CharField(max_length=100)
-#     abt_desc = models.TextField()
-#     abt_img = models.ImageField(upload_to='lukenyaGetawayAbout')
-
-
 class Gallery(models.Model):
     image_name = models.CharField(max_length=100)
     image_desc = models.TextField()
@@ -79,23 +73,4 @@ class Gallery(models.Model):
         verbose_name_plural = "galleries"
 
 
-
-
-
-# # class about_team(models.Model):
-# #     abt_team_name = models.CharField(max_length=100)
-# #     abt_team_desc = models.TextField()
-# #     abt_team_img = models.ImageField(upload_to='team')
-
-
-# class news(models.Model):
-#     news_header = models.CharField(max_length=100)
-#     news_description = models.TextField()
-#     news_img = models.ImageField(upload_to='lukenyaGetawayNews')
-#     news_date = models.DateField()
-
-
-# # class activity_category(models.Model):
-# #     cat_name = models.CharField(max_length=100)
-# #     cat_desc = models.TextField()
 
