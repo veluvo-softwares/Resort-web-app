@@ -1,0 +1,1 @@
+web: gunicorn lukenyaGetawayBackend.wsgi --log-file -
