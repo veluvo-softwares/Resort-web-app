@@ -1,34 +1,40 @@
-{% extends 'base.html' %}
+<!-- {% extends 'base.html' %} -->
 {% load static %}
 
 {% block title %} Home {% endblock title %}
 
 
 {% block body %}
+
     <!-- ##### Header Area End ##### -->
     <!-- ##### Book Now Area Start ##### -->
-    <hr style="margin-top: 150px; color: transparent;">
+    <hr style="color: transparent;">
     <div class="book-now-area">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
+                <br><br><br><br><br><br><br>
                 <!-- Booking Widget - Reserveport -->
-                <booking-widget id="1335" vce-ready=""></booking-widget>
+                    <booking-widget id="1335"></booking-widget>
+                    <script src="https://reservations.reserveport.com/static/js/manifest.js"></script>
+                    <script src="https://reservations.reserveport.com/static/js/vendor.js"></script>
+                    <script src="https://reservations.reserveport.com/static/js/app.js"></script>
+                    <!-- <link href="https://reservations.reserveport.com/static/css/app.css" rel="stylesheet"> -->
+                    <!-- Optional -->
+                    <!-- <link rel="stylesheet" href="https://www.reserveport.com/media/api5/bootstrap.min.css"> -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
+                    <script src="https://www.reserveport.com/media/api5/jquery.min.js"></script>
+                    <script src="https://www.reserveport.com/media/api5/popper.min.js"></script>
+                    <script src="https://www.reserveport.com/media/api5/bootstrap.min.js"></script>
+             
             </div>
         </div>
     </div>
 {% endblock %}
 {% block scripts %}
-<script type="text/javascript"
-src="https://reservations.reserveport.com/checkavailability/static/js/manifest.js"></script>
-<script type="text/javascript"
-src="https://reservations.reserveport.com/checkavailability/static/js/vendor.js"></script>
-<script type="text/javascript" src="{% static 'js/bookingWidget/app.js' %}"></script>
+
 <script type="text/javascript" src="https://www.reserveport.com/media/api5/popper.min.js"></script>
 <script type="text/javascript" src="https://www.reserveport.com/media/api5/bootstrap.min.js"></script>
 
-<script src="https://reservations.reserveport.com/static/js/manifest.js"></script>
-<script src="https://reservations.reserveport.com/static/js/vendor.js"></script>
-<script src="https://reservations.reserveport.com/static/js/app.js"></script>
 <!-- Optional -->
 <script src="https://www.reserveport.com/media/api5/popper.min.js"></script>
 <script src="https://www.reserveport.com/media/api5/bootstrap.min.js"></script>

@@ -13,5 +13,6 @@ urlpatterns = [
     # path('virtualtour', views.logout, name="virtual tour"),
     path('reservations', views.reservations, name="LukenyaGetawayReservations"),
     path('gallery', views.Gallery, name="LukenyaGetawayGallery"),
+    path('main', views.main, name="LukenyaGetawayMain"),
     
 ]

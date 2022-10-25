@@ -1,7 +1,7 @@
 # from django.contrib import messages
 from django.shortcuts import render, redirect
 # from django.http import HttpResponseRedirect
-from .models import Rooms, Testimonials, News, category, Gallery, image_category
+from .models import Rooms, Testimonials, News, category, Gallery
 # from .ContactForm import ContactForm
 from django.core.paginator import Paginator, Page, PageNotAnInteger, EmptyPage
 
@@ -16,12 +16,6 @@ def index(request):
     return render(request, "index.html", {'room': room, 'test': test})
 
 
-# def aboutus(request):
-#     abt = about.objects.all()
-#     abtcard = about_section.objects.all()
-    
-#     return render(request, "about.html", {'abt': abt, 'abtcard': abtcard})
-
 def aboutus(request):
     
     return render(request, "about-us.html")
@@ -29,6 +23,10 @@ def aboutus(request):
 def rooms(request):
     
     return render(request, "rooms.html")
+
+def main(request):
+    
+    return render(request, "main.html")
 
 def reservations(request):
     
@@ -49,8 +47,8 @@ def news(request):
 #     return render(request, "gallery.html", {"img_cat": img_cat,"images":images})
 
 
-# def gallery(request):
-#     return render(request, "gallery.html")
+def gallery(request):
+    return render(request, "gallery.html")
 
 def activities(request):
     
@@ -87,9 +85,9 @@ def news(request):
     news_set = News.objects.all()
     # pagination below
     paginator = Paginator(news_set, 5)
-    page = request.GET.get('page')
+    Page = request.GET.get('page')
     try:
-        nws = paginator.page(page)
+        nws = paginator.page(Page)
     except PageNotAnInteger:
         nws = paginator.page(1)
     except EmptyPage:
